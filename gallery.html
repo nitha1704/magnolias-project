@@ -180,9 +180,6 @@
                             <div class="line tt-center"></div>
                         </div>
                     </div>
-                    <!-- <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae rhoncus nisl, ac tristique tellus. Maecenas lacinia molestie sem a sodales. Curabitur ornare quam quis metus congue, vitae congue nisl sodales. Ut vestibulum neque feugiat ipsum auctor egestas. Curabitur congue consectetur augue,</p>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -327,24 +324,37 @@
                 </div>
                 <div class="D-4 L-6 SM-12 gallery facilities">
                     <a href="images/new-gallery2/r8-1.jpg" data-fancybox="facilities">
-                        <img src="images/new-gallery2/r8-1.jpg"" alt="">                  
+                        <img src="images/new-gallery2/r8-1.jpg" alt="">
                     </a>
                 </div>
                 <div class=" D-4 L-6 SM-12 gallery facilities">
-                        <a href="images/new-gallery2/r8.jpg" data-fancybox="facilities">
-                            <img src="images/new-gallery2/r8.jpg" alt="">
-                        </a>
+                    <a href="images/new-gallery2/r8.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r8.jpg" alt="">
+                    </a>
                 </div>
 
 
                 <!-- Video -->
                 <div class="D-4 L-6 SM-12 gallery video">
-                    <a data-fancybox
-                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
-                        YouTube video - hide controls and info
+                    <a href="https://www.youtube.com/watch?v=X9TEzt9vGl8" data-fancybox="video">
+                        <img src="images/new-gallery2/video-thumbnail1.jpg" alt="">
                     </a>
                 </div>
-
+                <div class="D-4 L-6 SM-12 gallery video">
+                    <a href="https://www.youtube.com/watch?v=enKLxdVNwG0" data-fancybox="video">
+                        <img src="images/new-gallery2/video-thumbnail2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery video">
+                    <a href="https://www.youtube.com/watch?v=KtK7nGjHKvU" data-fancybox="video">
+                        <img src="images/new-gallery2/video-thumbnail3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery video">
+                    <a href="https://www.youtube.com/watch?v=BpKyXUZfGeUk" data-fancybox="video">
+                        <img src="images/new-gallery2/video-thumbnail4.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -373,9 +383,9 @@
 
     <!-- Footer -->
     <footer>
-        <div class="inner">
+        <div class="inner wow animate__animated animate__slower animate__fadeIn">
             <div class="row">
-                <div class="D-4 L-5 T-5 D-left-4 M-12 M-left-0 center footer-form aos" data-aos="fade-up">
+                <div class="D-4 L-5 T-5 D-left-4 M-12 M-left-0 center footer-form">
                     <p class="head-title footer-header">NOW AVAILABLE</p>
                     <form name="available">
                         <div class="form-wrap bd left">
@@ -418,8 +428,8 @@
                 </div>
 
                 <div class="D-4 L-2 T-3 D-right-4 M-12 M-right-0 left footer-item1">
-                    <img src="images/new-image/home/footer-logo2.png" class="logo-footer aos" data-aos="fade-up">
-                    <ul class="footmenu aos" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/new-image/home/footer-logo2.png" class="logo-footer">
+                    <ul class="footmenu">
                         <li><a href="javascript:;">HOME</a></li>
                         <li><a href="javascript:;">ROOMS & SUITES</a></li>
                         <li><a href="javascript:;">FEATURES</a></li>
@@ -427,7 +437,7 @@
                         <li><a href="javascript:;">NEIGHBOURHOOD</a></li>
                         <li><a href="javascript:;">CONTACT</a></li>
                     </ul>
-                    <div class="aos" data-aos="fade-up" data-aos-delay="200">
+                    <div class="">
                         <p class="foot-head">ENQUIRIES</p>
                         <p class="foot-tel"><a href="javascript:;">(+66) 011 111 111</a><br><a
                                 href="mailto:info@hotel.com">info@hotel.com</a></p>
@@ -437,11 +447,8 @@
                     </div>
                 </div>
 
-                <img src="images/Compass-footer3.png" class="compasslogo aos" data-aos="fade-up">
-                <!-- <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">&copy; <?php echo date('Y'); ?>
-                    Magnolias Rachdamri | <a href="javascript:;" class="terms-of-use">Terms of Use</a></div> -->
-
-                <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">Copyright © 2020 Hotel.
+                <img src="images/Compass-footer3.png" class="compasslogo">
+                <div class="copyright">Copyright © 2020 Hotel.
                     <span class="all-rights-reserved">All Rights Reserved</span>
                 </div>
             </div>
@@ -472,6 +479,15 @@
             animationDuration: 366,
             transitionEffect: "slide",
             transitionDuration: 500,
+        })
+
+        $('[data-fancybox="video"]').fancybox({
+            animationEffect: "zoom-in-out",
+            animationDuration: 300,
+            youtube: {
+                controls: 1,
+                showinfo: 0
+            },
         })
     </script>
 
