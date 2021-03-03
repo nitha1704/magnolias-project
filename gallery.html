@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Hotel Project</title>
+    <meta name="description" content=" ">
+
+    <link rel="stylesheet" href="plugins/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/fancybox3.5.6/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/selectric.css">
+    <link rel="stylesheet" href="plugins/mcb/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/grid-system12.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive/residences-responsive.css">
+    <link rel="stylesheet" href="css/responsive/one-bedroom-responsive.css">
+    <link rel="stylesheet" href="css/responsive/two-bedroom-responsive.css">
+    <link rel="stylesheet" href="css/responsive/services-responsive.css">
+    <link rel="stylesheet" href="css/responsive/facilities-responsive.css">
+    <link rel="stylesheet" href="css/responsive/lifestyle-responsive.css">
+    <link rel="stylesheet" href="css/responsive/gallery-responsive.css">
+    <link rel="stylesheet" href="css/responsive/contact-responsive.css">
+
+</head>
+
+<body>
+    <!-- Mobile Menu -->
+    <nav class="nav center transz"
+        style="background: url(images/new-hotel-logo/new-expanded-menu.jpg); background-position: bottom right; background-repeat:no-repeat;">
+        <div class="inner">
+            <img src="images/home-logo2.png" class="menulogo">
+            <a href="javascript:toggleMENU();"><img src="images/close-menu.png" class="closemenu"></a>
+            <!-- <p class="topmenu">menu</p> -->
+            <div class="menu-mob-layout">
+                <ul class="navmenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="residences.html">RESIDENCES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <a href="javascript:;" class="bdbutton mml">CONTACT US</a><br>
+                <div class="lang mml">
+                    <a href="javascript:;" class="first">THAI</a>
+                    <a href="javascript:;" class="second">ENGLISH</a>
+                </div><br>
+                <a href="javascript:;" class="privacy mml">PRIVACY STATEMENT</a>
+            </div>
+
+            <a href="javascript:;" class="bdbutton bdbuttonContact bdbutton-expanded-menu1" style="left: 45%;">CONTACT
+                AGENT</a>
+            <a href="javascript:;" class="bdbutton call bdbutton-expanded-menu2" id="bdbuttonCall2"
+                style="left: 57%;"><img src="images/new-hotel-logo/icon-phone2.png" id="bdbuttonCallImg2">
+                <span id="bdbuttonCallParagraph2">CALL US</span>
+            </a>
+
+            <div class="lang hidden-M">
+                <a href="javascript:;" class="first">THAI</a>
+                <a href="javascript:;" style="padding-left: 9px;">ENGLISH</a>
+            </div>
+            <a href="javascript:;" class="privacy hidden-M">PRIVACY STATEMENT</a>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Desktop Menu -->
+    <header class="header center transz">
+        <div class="inner">
+            <div class="row">
+                <div class="D-4 left mainmenu">
+                    <a href="javascript:toggleMENU();" class="first">
+                        <div class="bar">
+                            <div class="line" class="first"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <span class="hideM">MENU</span>
+                    </a>
+                    <a href="index.html" class="hideM">HOME</a>
+                </div>
+                <div class="D-4 M-12 center">
+                    <img src="images/home-logo2.png" class="logo transz imgLOGO">
+                    <span class="flagResponsive" onclick="dropdownLanguageResponsive()">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/uk-flag.png" alt=""> EN
+                        </a>
+                    </span>
+                    <div class="dropdown-magnolias-responsive">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/th-flag2.jpg" alt=""> TH
+                        </a>
+                    </div>
+                </div>
+                <div class="D-4 right topcontact">
+                    <a href="javascript:;" class="bdbutton cagent">CONTACT US</a>
+                    <a href="javascript:;" class="bdbutton call" id="bdbuttonCall"><img
+                            src="images/new-hotel-logo/icon-phone2.png" id="bdbuttonCallImg">
+                        <p id="bdbuttonCallParagraph">(+66) 011 111 111</p>
+                    </a>
+                    <a href="javascript:;" class="bdbutton cagent-Responsive">CONTACT US : <br> (+66) 011 111 111</a>
+                    <a href="javascript:;" class="flagButton" onclick="dropdownLanguage()">
+                        <img src="images/new-hotel-logo/uk-flag.png" alt=""> EN
+                    </a>
+
+                    <div class="dropdown-magnolias">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/th-flag2.jpg" alt=""> TH
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Banner -->
+    <section class="home-banner Magnolia-Website-Residences" style="background:linear-gradient(rgba(0,0,0,0.35) 100%,rgba(255, 255, 255, 255) 0%), url(banners/gallery-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;">
+        <!-- <div class="mask-banner"></div> -->
+        <div class="home-slide">
+            <div class="rightSideBarHeader-residences">
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner1.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Virtual Tour</span>
+                    </a>
+                </div>
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner2.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Video</span>
+                    </a>
+                </div>
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner3.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Photo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="slide-obj cover"></div>
+        </div>
+    </section>
+    <!--HOME BANNER-->
+
+
+
+    <!--Gallery Section 1-->
+    <section class="content pdct center gallery-section1">
+        <div class="inner">
+            <div class="row  center">
+                <div class="D-8 L-10 M-10 SM-12">
+                    <div class="wow animate__animated animate__slow animate__fadeIn">
+                        <p class="sub-title">LOREM IPSUM</p>
+                        <p class="head-title address">GALLERY</p>
+                        <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae rhoncus nisl, ac tristique tellus. Maecenas lacinia molestie sem a sodales. Curabitur ornare quam quis metus congue, vitae congue nisl sodales. Ut vestibulum neque feugiat ipsum auctor egestas. Curabitur congue consectetur augue,</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Gallery Section 2-->
+    <section class="content pdct center gallery-section2">
+        <div class="inner">
+            <div class="row">
+                <div class="D-12 L-10 M-10 gallery-section2-item1 wow animate__animated animate__slow animate__fadeIn">
+                    <div>
+                        <a href="javascript:;" class="gallery-section2-item1-1 btn-filter"
+                            data-filter=".exterior">EXTERIOR</a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="gallery-section2-item1-2 btn-filter"
+                            data-filter=".residences">RESIDENCES</a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="gallery-section2-item1-3 btn-filter"
+                            data-filter=".facilities">FACILITIES</a>
+                    </div>
+                    <div>
+                        <a href="javascript:;" class="gallery-section2-item1-4 btn-filter"
+                            data-filter=".video">VIDEO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Gallery Section 3-->
+    <section class="content center gallery-section3">
+        <div class="inner gallery-section3-inner">
+            <div class="row wrap-gallery wow animate__animated animate__slow animate__fadeIn">
+                <!-- Exterior -->
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r7.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r7-1.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r7-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery exterior">
+                    <a href="images/new-gallery2/e1-1.jpg" data-fancybox="exterior">
+                        <img src="images/new-gallery2/e1-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery exterior">
+                    <a href="images/new-gallery2/e2.jpg" data-fancybox="exterior">
+                        <img src="images/new-gallery2/e2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery exterior">
+                    <a href="images/new-gallery2/e3.jpg" data-fancybox="exterior">
+                        <img src="images/new-gallery2/e3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery exterior">
+                    <a href="images/new-gallery2/e4.jpg" data-fancybox="exterior">
+                        <img src="images/new-gallery2/e4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery exterior">
+                    <a href="images/new-gallery2/f1.jpg" data-fancybox="exterior">
+                        <img src="images/new-gallery2/f1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery exterior">
+                    <a href="images/new-gallery2/f2.jpg" data-fancybox="exterior">
+                        <img src="images/new-gallery2/f2.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Residences -->
+                <div class="D-4 L-6 SM-12 gallery residences">
+                    <a href="images/new-gallery2/r1.jpg" data-fancybox="residences">
+                        <img src="images/new-gallery2/r1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery residences">
+                    <a href="images/new-gallery2/r1-1.jpg" data-fancybox="residences">
+                        <img src="images/new-gallery2/r1-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery residences">
+                    <a href="images/new-gallery2/r2.jpg" data-fancybox="residences">
+                        <img src="images/new-gallery2/r2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery residences">
+                    <a href="images/new-gallery2/r2-1.jpg" data-fancybox="residences">
+                        <img src="images/new-gallery2/r2-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery residences">
+                    <a href="images/new-gallery2/r3.jpg" data-fancybox="residences">
+                        <img src="images/new-gallery2/r3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery residences">
+                    <a href="images/new-gallery2/r3-1.jpg" data-fancybox="residences">
+                        <img src="images/new-gallery2/r3-1.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- Facilities -->
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r4.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r4-1.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r4-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r5.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r5-1.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r5-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r6.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r6-1.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r6-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="D-4 L-6 SM-12 gallery facilities">
+                    <a href="images/new-gallery2/r8-1.jpg" data-fancybox="facilities">
+                        <img src="images/new-gallery2/r8-1.jpg"" alt="">                  
+                    </a>
+                </div>
+                <div class=" D-4 L-6 SM-12 gallery facilities">
+                        <a href="images/new-gallery2/r8.jpg" data-fancybox="facilities">
+                            <img src="images/new-gallery2/r8.jpg" alt="">
+                        </a>
+                </div>
+
+
+                <!-- Video -->
+                <div class="D-4 L-6 SM-12 gallery video">
+                    <a data-fancybox
+                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+                        YouTube video - hide controls and info
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Gallery Section 4-->
+    <!-- <section class="content center gallery-section4">
+        <div class="inner">
+            <div class="row">
+                <div class="wow animate__animated animate__slow animate__fadeIn">
+                    <ul class="gallery-section4-item1">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="inner">
+            <div class="row">
+                <div class="D-4 L-5 T-5 D-left-4 M-12 M-left-0 center footer-form aos" data-aos="fade-up">
+                    <p class="head-title footer-header">NOW AVAILABLE</p>
+                    <form name="available">
+                        <div class="form-wrap bd left">
+                            <label>Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="form-wrap bd left">
+                            <label>Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <p class="inOrderForUs">IN ORDER FOR US TO TAILOR OUR OFFER SPECIFICALLY
+                            TO YOUR NEEDS, PLEASE LET US KNOW WHICH LEVEL
+                            YOU ARE INTERESTED IN OR HOW MANY ROOMS
+                            YOU WILL NEED.</p>
+                        <p>
+
+
+                        <div class="form-wrap bd mb left">
+                            <label class="det">Detail</label>
+                            <textarea type="text" name="detail" id="detail" rows="8"></textarea>
+                        </div>
+
+
+                        <div class="form-wrap left accept">
+                            <label class="container">
+                                <span class="iAgree">I Agree with the General Terms & Conditions
+                                    <br>
+                                    of the protection of
+                                    the privacy declaration.</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <a href="javascript:;" class="submit bdbutton submitFooter">SUBMIT</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="D-4 L-2 T-3 D-right-4 M-12 M-right-0 left footer-item1">
+                    <img src="images/new-image/home/footer-logo2.png" class="logo-footer aos" data-aos="fade-up">
+                    <ul class="footmenu aos" data-aos="fade-up" data-aos-delay="100">
+                        <li><a href="javascript:;">HOME</a></li>
+                        <li><a href="javascript:;">ROOMS & SUITES</a></li>
+                        <li><a href="javascript:;">FEATURES</a></li>
+                        <li><a href="javascript:;">AMENITIES</a></li>
+                        <li><a href="javascript:;">NEIGHBOURHOOD</a></li>
+                        <li><a href="javascript:;">CONTACT</a></li>
+                    </ul>
+                    <div class="aos" data-aos="fade-up" data-aos-delay="200">
+                        <p class="foot-head">ENQUIRIES</p>
+                        <p class="foot-tel"><a href="javascript:;">(+66) 011 111 111</a><br><a
+                                href="mailto:info@hotel.com">info@hotel.com</a></p>
+                        <a href="javascript:;" class="social-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="javascript:;" class="social-link"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/Compass-footer3.png" class="compasslogo aos" data-aos="fade-up">
+                <!-- <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">&copy; <?php echo date('Y'); ?>
+                    Magnolias Rachdamri | <a href="javascript:;" class="terms-of-use">Terms of Use</a></div> -->
+
+                <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">Copyright © 2020 Hotel.
+                    <span class="all-rights-reserved">All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="plugins/fancybox3.5.6/jquery.fancybox.min.js"></script>
+    <script src="plugins/wowJS/wow.min.js"></script>
+    <script src="plugins/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="plugins/isotope.pkgd.min.js"></script>
+    <script src="plugins/jquery.selectric.min.js"></script>
+    <script src="plugins/mcb/jquery.mCustomScrollbar.js"></script>
+    <script src="plugins/jquery.appear.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+
+    <script src="scripts/setting.js"></script>
+
+    <script>
+        // WOW JS
+        new WOW().init();
+
+        // FancyBox
+        $('[data-fancybox]').fancybox({
+            animationEffect: "zoom-in-out",
+            animationDuration: 366,
+            transitionEffect: "slide",
+            transitionDuration: 500,
+        })
+    </script>
+
+</body>
+
+</html>

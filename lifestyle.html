@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Hotel Project</title>
+    <meta name="description" content=" ">
+
+    <link rel="stylesheet" href="plugins/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/selectric.css">
+    <link rel="stylesheet" href="plugins/mcb/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/grid-system12.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive/residences-responsive.css">
+    <link rel="stylesheet" href="css/responsive/one-bedroom-responsive.css">
+    <link rel="stylesheet" href="css/responsive/two-bedroom-responsive.css">
+    <link rel="stylesheet" href="css/responsive/services-responsive.css">
+    <link rel="stylesheet" href="css/responsive/facilities-responsive.css">
+    <link rel="stylesheet" href="css/responsive/lifestyle-responsive.css">
+    <link rel="stylesheet" href="css/responsive/gallery-responsive.css">
+    <link rel="stylesheet" href="css/responsive/contact-responsive.css">
+
+</head>
+
+<body>
+    <!-- Mobile Menu -->
+    <nav class="nav center transz"
+        style="background: url(images/new-hotel-logo/new-expanded-menu.jpg); background-position: bottom right; background-repeat:no-repeat;">
+        <div class="inner">
+            <img src="images/home-logo2.png" class="menulogo">
+            <a href="javascript:toggleMENU();"><img src="images/close-menu.png" class="closemenu"></a>
+            <!-- <p class="topmenu">menu</p> -->
+            <div class="menu-mob-layout">
+                <ul class="navmenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="residences.html">RESIDENCES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <a href="javascript:;" class="bdbutton mml">CONTACT US</a><br>
+                <div class="lang mml">
+                    <a href="javascript:;" class="first">THAI</a>
+                    <a href="javascript:;" class="second">ENGLISH</a>
+                </div><br>
+                <a href="javascript:;" class="privacy mml">PRIVACY STATEMENT</a>
+            </div>
+
+            <a href="javascript:;" class="bdbutton bdbuttonContact bdbutton-expanded-menu1" style="left: 45%;">CONTACT
+                AGENT</a>
+            <a href="javascript:;" class="bdbutton call bdbutton-expanded-menu2" id="bdbuttonCall2"
+                style="left: 57%;"><img src="images/new-hotel-logo/icon-phone2.png" id="bdbuttonCallImg2">
+                <span id="bdbuttonCallParagraph2">CALL US</span>
+            </a>
+
+            <div class="lang hidden-M">
+                <a href="javascript:;" class="first">THAI</a>
+                <a href="javascript:;" style="padding-left: 9px;">ENGLISH</a>
+            </div>
+            <a href="javascript:;" class="privacy hidden-M">PRIVACY STATEMENT</a>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Desktop Menu -->
+    <header class="header center transz">
+        <div class="inner">
+            <div class="row">
+                <div class="D-4 left mainmenu">
+                    <a href="javascript:toggleMENU();" class="first">
+                        <div class="bar">
+                            <div class="line" class="first"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <span class="hideM">MENU</span>
+                    </a>
+                    <a href="index.html" class="hideM">HOME</a>
+                </div>
+                <div class="D-4 M-12 center">
+                    <img src="images/home-logo2.png" class="logo transz imgLOGO">
+                    <span class="flagResponsive" onclick="dropdownLanguageResponsive()">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/uk-flag.png" alt=""> EN
+                        </a>
+                    </span>
+                    <div class="dropdown-magnolias-responsive">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/th-flag2.jpg" alt=""> TH
+                        </a>
+                    </div>
+                </div>
+                <div class="D-4 right topcontact">
+                    <a href="javascript:;" class="bdbutton cagent">CONTACT US</a>
+                    <a href="javascript:;" class="bdbutton call" id="bdbuttonCall"><img
+                            src="images/new-hotel-logo/icon-phone2.png" id="bdbuttonCallImg">
+                        <p id="bdbuttonCallParagraph">(+66) 011 111 111</p>
+                    </a>
+                    <a href="javascript:;" class="bdbutton cagent-Responsive">CONTACT US : <br> (+66) 011 111 111</a>
+                    <a href="javascript:;" class="flagButton" onclick="dropdownLanguage()">
+                        <img src="images/new-hotel-logo/uk-flag.png" alt=""> EN
+                    </a>
+
+                    <div class="dropdown-magnolias">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/th-flag2.jpg" alt=""> TH
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Lifestyle Banner -->
+    <section class="home-banner Magnolia-Website-Lifestyle" style="background:linear-gradient(rgba(0,0,0,0) 100%,rgba(255, 255, 255, 255) 0%), url(banners/lifestyle-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;">
+        <!-- <div class="mask-banner"></div> -->
+        <div class="home-slide">
+            <div class="rightSideBarHeader-residences">
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner1.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Virtual Tour</span>
+                    </a>
+                </div>
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner2.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Video</span>
+                    </a>
+                </div>
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner3.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Photo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="slide-obj cover"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Lifestyle Section 1 -->
+    <section class="content pdct center lifestyle-section1">
+        <div class="inner">
+            <div class="row center">
+                <div class="D-9 L-10 M-12">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">LOCAL DINING</p>
+                        <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lifestyle Section 2 PC-->
+    <section class="content pdct center lifestyle-section2-PC">
+        <div class="inner">
+            <div class="row services-section5-row1 lifestyle-row1">
+                <div class="D-7 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/breakfast-801827_1280.jpg" alt="" class="aos" data-aos="fade-up">
+                </div>
+                <div class="D-5 services-section5-item2 lifestyle-item2">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">RESTAURANT</p>
+                    </div>
+                    <img src="images/new-lifestyle/hotel-4857711_1280.jpg" alt="" class="aos lifestyle-image-small"
+                        data-aos="fade-up">
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum</p>
+                        <p class="p3-lifestyle-button single-time-button">
+                            <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-section5-row2 lifestyle-row2">
+                <div class="D-5 services-section5-item2 lifestyle-item2">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">FRONT ROOM</p>
+                    </div>
+                    <img src="images/new-lifestyle/wine-2373500_1280.jpg" alt="" class="aos lifestyle-image-small"
+                        data-aos="fade-up">
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum</p>
+                        <p class="p3-lifestyle-button single-time-button">
+                            <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="D-7 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/villa-cortine-palace-949552_1280.jpg" alt="" class="aos"
+                        data-aos="fade-up">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lifestyle Section 2 1200PX-->
+    <section class="content pdct center lifestyle-section2-1200px services-section5-1200PX lifestyle-tablet-1200px">
+        <div class="inner">
+            <div class="row services-section5-row1 lifestyle-row1">
+                <div class="D-12 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/breakfast-801827_1280.jpg" alt=""
+                        class="aos services-section5-item1-1" data-aos="fade-up">
+                    <div class="D-12 services-section5-item2 lifestyle-item2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">RESTAURANT</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum</p>
+                            <p class="p3-lifestyle-button single-time-button">
+                                <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-section5-row2 lifestyle-row2">
+                <div class="D-12 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/villa-cortine-palace-949552_1280.jpg" alt=""
+                        class="aos services-section5-item1-1" data-aos="fade-up">
+                    <div class="D-12 services-section5-item2 lifestyle-item2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">FRONT ROOM</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum</p>
+                            <p class="p3-lifestyle-button single-time-button">
+                                <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Lifestyle Section 3 -->
+    <section class="content center lifestyle-section3">
+        <div class="inner">
+            <div class="row">
+                <div class="D-6 L-12 content-section4-item1 aos" data-aos="fade-up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Nunc vitae rhoncus nisl, ac tristique tellus.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Lifestyle Section 4 PC-->
+    <section class="content pdct center lifestyle-section2-PC">
+        <div class="inner">
+            <div class="row services-section5-row1 lifestyle-row1">
+                <div class="D-7 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/buffet-315691_1280.jpg" alt="" class="aos" data-aos="fade-up">
+                </div>
+                <div class="D-5 services-section5-item2 lifestyle-item2">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">BUFFET</p>
+                    </div>
+                    <img src="images/new-lifestyle/platter-2009590_1280.jpg" alt="" class="aos lifestyle-image-small"
+                        data-aos="fade-up">
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p class="p3-lifestyle-button">
+                            <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-section5-row2 lifestyle-row2">
+                <div class="D-5 services-section5-item2 lifestyle-item2">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">BREAKFAST</p>
+                    </div>
+                    <img src="images/new-lifestyle/croissants-569075_1280.jpg" alt="" class="aos lifestyle-image-small"
+                        data-aos="fade-up">
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p class="p3-lifestyle-button">
+                            <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="D-7 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/breakfast-1804457_1280.jpg" alt="" class="aos" data-aos="fade-up">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lifestyle Section 4 1200PX-->
+    <section class="content pdct center lifestyle-section4-1200px services-section5-1200PX lifestyle-tablet-1200px">
+        <div class="inner">
+            <div class="row services-section5-row1 lifestyle-row1">
+                <div class="D-12 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/buffet-315691_1280.jpg" alt="" class="aos services-section5-item1-1"
+                        data-aos="fade-up">
+                    <div class="D-12 services-section5-item2 lifestyle-item2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">BUFFET</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum</p>
+                            <p>Lorem ipsum</p>
+                            <p class="p3-lifestyle-button">
+                                <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-section5-row2 lifestyle-row2">
+                <div class="D-12 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/breakfast-1804457_1280.jpg" alt=""
+                        class="aos services-section5-item1-1" data-aos="fade-up">
+                    <div class="D-12 services-section5-item2 lifestyle-item2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">BREAKFAST</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum</p>
+                            <p>Lorem ipsum</p>
+                            <p class="p3-lifestyle-button">
+                                <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lifestyle Section 5 -->
+    <section class="content center lifestyle-section5">
+        <div class="inner">
+            <div class="row">
+                <div class="D-6 L-12 content-section4-item1 aos" data-aos="fade-up">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Nunc vitae rhoncus nisl, ac tristique tellus.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lifestyle Section 6 PC-->
+    <section class="content pdct center lifestyle-section2-PC">
+        <div class="inner">
+            <div class="row services-section5-row1 lifestyle-row1">
+                <div class="D-7 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/1280px-Tennis_Court.JPG" alt="" class="aos" data-aos="fade-up">
+                </div>
+                <div class="D-5 services-section5-item2 lifestyle-item2">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">TENNIS COURT</p>
+                    </div>
+                    <img src="images/new-lifestyle/tennis-thumbnail.jpg" alt="" class="aos lifestyle-image-small"
+                        data-aos="fade-up">
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p class="p3-lifestyle-button">
+                            <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-section5-row2 lifestyle-row2">
+                <div class="D-5 services-section5-item2 lifestyle-item2">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">BAR</p>
+                    </div>
+                    <img src="images/new-lifestyle/table-3084384_1280.jpg" alt="" class="aos lifestyle-image-small"
+                        data-aos="fade-up">
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="">Lorem ipsum</p>
+                        <p class="p3-lifestyle-button single-time-button">
+                            <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="D-7 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/bar-3623310_1280.jpg" alt="" class="aos" data-aos="fade-up">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lifestyle Section 6 1200PX-->
+    <section class="content pdct center lifestyle-section6-1200px services-section5-1200PX lifestyle-tablet-1200px">
+        <div class="inner">
+            <div class="row services-section5-row1 lifestyle-row1">
+                <div class="D-12 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/1280px-Tennis_Court.JPG" alt="" class="aos services-section5-item1-1"
+                        data-aos="fade-up">
+                    <div class="D-12 services-section5-item2 lifestyle-item2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">TENNIS COURT</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum</p>
+                            <p>Lorem ipsum</p>
+                            <p class="p3-lifestyle-button">
+                                <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row services-section5-row2 lifestyle-row2">
+                <div class="D-12 services-section5-item1 lifestyle-item1">
+                    <img src="images/new-lifestyle/bar-3623310_1280.jpg" alt="" class="aos services-section5-item1-1"
+                        data-aos="fade-up">
+                    <div class="D-12 services-section5-item2 lifestyle-item2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">BAR</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="">Lorem ipsum</p>
+                            <p class="p3-lifestyle-button single-time-button">
+                                <a href="javascript:;" class="bdbutton">EXPLORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Lifestyle Section 7 -->
+    <!-- <section class="content pdct center lifestyle-section7">
+        <div class="inner">
+            <div class="row center">
+                <div class="D-9 L-10 M-12">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">SHOPPING</p>
+                        <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Lifestyle Section 8 -->
+    <section class="content center lifestyle-section8">
+        <div class="inner">
+            <div class="row">
+                <div class="D-12 aos" data-aos="fade-up">
+                    <img src="images/new-lifestyle/beauty-salon-3277314_1280.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Lifestyle Section 9 -->
+    <section class="content pdct center lifestyle-section9">
+        <div class="inner">
+            <div class="row center">
+                <div class="D-9 L-10 M-12">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">SALON</p>
+                        <!-- <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div> -->
+                    </div>
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu lorem, rhoncus at est in,
+                            malesuada<br>
+                            hendrerit metus. Integer risus tortor, finibus vel urna eu, cursus pretium massa. Proin
+                            efficitur ipsum<br>
+                            pharetra ex ullamcorper, id porttitor lectus pulvinar. Nunc tincidunt dignissim maximus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Lifestyle Section 10 -->
+    <section class="content center facilities-section5 lifestyle-section10">
+        <div class="inner">
+            <div class="row facilities-section5-row1 lifestyle-section10-row1">
+                <div class="D-6 L-12 facilities-section5-item1 lifestyle-section10-item1">
+                    <img src="images/new-lifestyle/sams-linen-hire.jpg" alt=""
+                        class="facilities-section5-item1-1 lifestyle-section10-item1-1 aos" data-aos="fade-up">
+                    <div class="D-11 facilities-section5-item1-2 lifestyle-section10-item1-2">
+                        <div class="aos" data-aos="fade-up">
+                            <p class="sub-title">LIFESTYLE</p>
+                            <p class="head-title address">LAUNDRY AND DRY CLEANING</p>
+                        </div>
+                        <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu lorem, rhoncus at est
+                                in, malesuada hendrerit metus. Integer risus tortor, finibus vel urna eu, cursus pretium
+                                massa. Proin efficitur ipsum pharetra ex ullamcorper, id porttitor lectus pulvinar. Nunc
+                                tincidunt dignissim maximus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="D-6 L-12 facilities-section5-item2 lifestyle-section10-item2">
+                    <div class="facilities-section5-item2-1 lifestyle-section10-item2-1">
+                        <div class="D-10 L-12 facilities-section5-item2-1-1 lifestyle-section10-item2-1-1">
+                            <div class="aos" data-aos="fade-up">
+                                <p class="sub-title">LIFESTYLE</p>
+                                <p class="head-title address">FREE WIFI</p>
+                            </div>
+                            <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu lorem, rhoncus at
+                                    est in, malesuada hendrerit metus. Integer risus tortor, finibus vel urna eu, cursus
+                                    pretium massa. Proin efficitur ipsum pharetra ex ullamcorper, id porttitor lectus
+                                    pulvinar. Nunc tincidunt dignissim maximus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/new-lifestyle/30348220_381bb6ef9b_b.jpg" alt=""
+                        class="facilities-section5-item2-2 lifestyle-section10-item2-2 aos" data-aos="fade-up">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lifestyle Section 12 -->
+    <section class="content center lifestyle-section12">
+        <div class="inner">
+            <div class="row">
+                <div class="D-12 aos" data-aos="fade-up">
+                    <img src="images/new-lifestyle/computer-workstations-415138_1280.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section 11 -->
+    <section class="content pdct center lifestyle-section11">
+        <div class="inner">
+            <div class="row center">
+                <div class="D-9 L-10 M-12">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">PUBLIC COMPUTER</p>
+                        <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae rhoncus nisl, ac
+                            tristique tellus. Maecenas lacinia<br>
+                            molestie sem a sodales. Curabitur ornare quam quis metus congue, vitae congue nisl sodales.
+                            Ut vestibulum neque<br>
+                            feugiat ipsum auctor egestas. Curabitur congue consectetur augue,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Lifestyle Section 13 -->
+    <!-- <section class="content pdct center lifestyle-section13">
+        <div class="inner">
+            <div class="row center">
+                <div class="D-9 L-10 M-12">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">LIFESTYLE</p>
+                        <p class="head-title address">SPA</p>
+                        <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu lorem, rhoncus at est in,
+                            malesuada<br>
+                            hendrerit metus. Integer risus tortor, finibus vel urna eu, cursus pretium massa. Proin
+                            efficitur ipsum<br>
+                            pharetra ex ullamcorper, id porttitor lectus pulvinar. Nunc tincidunt dignissim maximus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="inner">
+            <div class="row">
+                <div class="D-4 L-5 T-5 D-left-4 M-12 M-left-0 center footer-form aos" data-aos="fade-up">
+                    <p class="head-title footer-header">NOW AVAILABLE</p>
+                    <form name="available">
+                        <div class="form-wrap bd left">
+                            <label>Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="form-wrap bd left">
+                            <label>Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <p class="inOrderForUs">IN ORDER FOR US TO TAILOR OUR OFFER SPECIFICALLY
+                            TO YOUR NEEDS, PLEASE LET US KNOW WHICH LEVEL
+                            YOU ARE INTERESTED IN OR HOW MANY ROOMS
+                            YOU WILL NEED.</p>
+                        <p>
+
+
+                        <div class="form-wrap bd mb left">
+                            <label class="det">Detail</label>
+                            <textarea type="text" name="detail" id="detail" rows="8"></textarea>
+                        </div>
+
+
+                        <div class="form-wrap left accept">
+                            <label class="container">
+                                <span class="iAgree">I Agree with the General Terms & Conditions
+                                    <br>
+                                    of the protection of
+                                    the privacy declaration.</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <a href="javascript:;" class="submit bdbutton submitFooter">SUBMIT</a>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="D-4 L-2 T-3 D-right-4 M-12 M-right-0 left footer-item1">
+                    <img src="images/new-image/home/footer-logo2.png" class="logo-footer aos" data-aos="fade-up">
+                    <ul class="footmenu aos" data-aos="fade-up" data-aos-delay="100">
+                        <li><a href="javascript:;">HOME</a></li>
+                        <li><a href="javascript:;">ROOMS & SUITES</a></li>
+                        <li><a href="javascript:;">FEATURES</a></li>
+                        <li><a href="javascript:;">AMENITIES</a></li>
+                        <li><a href="javascript:;">NEIGHBOURHOOD</a></li>
+                        <li><a href="javascript:;">CONTACT</a></li>
+                    </ul>
+                    <div class="aos" data-aos="fade-up" data-aos-delay="200">
+                        <p class="foot-head">ENQUIRIES</p>
+                        <p class="foot-tel"><a href="javascript:;">(+66) 011 111 111</a><br><a
+                                href="mailto:info@hotel.com">info@hotel.com</a></p>
+                        <a href="javascript:;" class="social-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="javascript:;" class="social-link"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/Compass-footer3.png" class="compasslogo aos" data-aos="fade-up">
+                <!-- <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">&copy; <?php echo date('Y'); ?>
+                    Magnolias Rachdamri | <a href="javascript:;" class="terms-of-use">Terms of Use</a></div> -->
+
+                <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">Copyright © 2020 Hotel.
+                    <span class="all-rights-reserved">All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="plugins/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="plugins/jquery.selectric.min.js"></script>
+    <script src="plugins/mcb/jquery.mCustomScrollbar.js"></script>
+    <script src="plugins/jquery.appear.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="scripts/setting.js"></script>
+
+</body>
+
+</html>

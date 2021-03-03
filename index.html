@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Hotel Project</title>
+    <meta name="description" content=" ">
+
+    <link rel="stylesheet" href="plugins/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/selectric.css">
+    <link rel="stylesheet" href="plugins/mcb/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/grid-system12.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive/residences-responsive.css">
+    <link rel="stylesheet" href="css/responsive/one-bedroom-responsive.css">
+    <link rel="stylesheet" href="css/responsive/two-bedroom-responsive.css">
+    <link rel="stylesheet" href="css/responsive/services-responsive.css">
+    <link rel="stylesheet" href="css/responsive/facilities-responsive.css">
+    <link rel="stylesheet" href="css/responsive/lifestyle-responsive.css">
+    <link rel="stylesheet" href="css/responsive/gallery-responsive.css">
+    <link rel="stylesheet" href="css/responsive/contact-responsive.css">
+
+
+</head>
+
+<body>
+
+    <!-- Mobile Menu -->
+    <nav class="nav center transz"
+        style="background: url(images/new-hotel-logo/new-expanded-menu.jpg); background-position: bottom right; background-repeat:no-repeat;">
+        <div class="inner">
+            <img src="images/home-logo2.png" class="menulogo">
+            <a href="javascript:toggleMENU();"><img src="images/close-menu.png" class="closemenu"></a>
+            <!-- <p class="topmenu">menu</p> -->
+            <div class="menu-mob-layout">
+                <ul class="navmenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="residences.html">RESIDENCES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <a href="contact.html" class="bdbutton mml">CONTACT US</a><br>
+                <div class="lang mml">
+                    <a href="javascript:;" class="first">THAI</a>
+                    <a href="javascript:;" class="second">ENGLISH</a>
+                </div><br>
+                <a href="javascript:;" class="privacy mml">PRIVACY STATEMENT</a>
+            </div>
+
+            <a href="javascript:;" class="bdbutton bdbuttonContact bdbutton-expanded-menu1" style="left: 45%;">CONTACT
+                AGENT</a>
+            <a href="javascript:;" class="bdbutton call bdbutton-expanded-menu2" id="bdbuttonCall2"
+                style="left: 57%;"><img src="images/new-hotel-logo/icon-phone2.png" id="bdbuttonCallImg2">
+                <span id="bdbuttonCallParagraph2">CALL US</span>
+            </a>
+
+            <div class="lang hidden-M">
+                <a href="javascript:;" class="first">THAI</a>
+                <a href="javascript:;" style="padding-left: 9px;">ENGLISH</a>
+            </div>
+            <a href="javascript:;" class="privacy hidden-M">PRIVACY STATEMENT</a>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- Desktop Menu -->
+    <header class="header center transz">
+        <div class="inner">
+            <div class="row">
+                <div class="D-4 left mainmenu">
+                    <a href="javascript:toggleMENU();" class="first">
+                        <div class="bar">
+                            <div class="line" class="first"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <span class="hideM">MENU</span>
+                    </a>
+                    <a href="index.html" class="hideM">HOME</a>
+                </div>
+                <div class="D-4 M-12 center">
+                    <img src="images/home-logo2.png" class="logo transz imgLOGO">
+                    <span class="flagResponsive" onclick="dropdownLanguageResponsive()">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/uk-flag.png" alt=""> EN
+                        </a>
+                    </span>
+                    <div class="dropdown-magnolias-responsive">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/th-flag2.jpg" alt=""> TH
+                        </a>
+                    </div>
+                </div>
+                <div class="D-4 right topcontact">
+                    <a href="contact.html" target="_blank" class="bdbutton cagent">CONTACT US</a>
+                    <a href="javascript:;" class="bdbutton call" id="bdbuttonCall"><img
+                            src="images/new-hotel-logo/icon-phone2.png" id="bdbuttonCallImg">
+                        <p id="bdbuttonCallParagraph">(+66) 011 111 111</p>
+                    </a>
+                    <a href="contact.html" target="_blank" class="bdbutton cagent-Responsive">CONTACT US : <br> (+66)
+                        011 111 111</a>
+                    <a href="javascript:;" class="flagButton" onclick="dropdownLanguage()">
+                        <img src="images/new-hotel-logo/uk-flag.png" alt=""> EN
+                    </a>
+
+                    <div class="dropdown-magnolias">
+                        <a href="javascript:;" class="flagButton">
+                            <img src="images/new-hotel-logo/th-flag2.jpg" alt=""> TH
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Home Banner -->
+    <section class="home-banner" style="background:url(banners/home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;">
+        <!-- <div class="mask-banner"></div> -->
+        <div class="home-slide">
+            <div class="rightSideBarHeader">
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner1.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Virtual Tour</span>
+                    </a>
+                </div>
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner2.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Video</span>
+                    </a>
+                </div>
+                <div class="rightSideBarHeader-item">
+                    <a href="#">
+                        <img src="images/new-hotel-logo/right-side-banner3.png" alt="">
+                    </a>
+                    <br>
+                    <a href="#">
+                        <span>Photo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="slide-obj cover very-privileged">
+                <div class="caption first center">
+                    <p class="title t1">A HOME FOR</p>
+                    <p class="title t2">THE VERY PRIVILEGED</p>
+                    <div class="hr hrhome">
+                        <div class="line tt-center very-privileged-line"></div>
+                    </div>
+                    <p class="title t3 very-privileged-p3">HOTEL BOULEVARD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home Section 1 -->
+    <section class="content pdct center main-section1">
+        <div class="inner">
+            <div class="row  center">
+                <div class="D-6 L-10 M-10">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">HOME</p>
+                        <p class="head-title address">ADDRESS</p>
+                        <div class="hr sixty">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="aos boulevard-offers" data-aos="fade-up" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <br>
+                    <!-- <div class="aos divbdbutton" data-aos="fade-up" data-aos-delay="200">
+                        <a href="contact.html" target="_blank"
+                            class="bdbutton bdbuttonContact bdbuttonContact-section1">CONTACT US</a>
+                        <a href="contact.html" target="_blank" class="bdbuttonContact-section1-1100px">CONTACT US</a>
+                        <a href="javascript:;" class="bdbutton call" id="bdbutton-call2">
+                            <img src="images/new-hotel-logo/icon-phone2.png" id="bdbutton-call2-img">
+                            <span id="bdbutton-call2-p">(+66) 011 111 111</span>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home Section 2 -->
+    <section class="content RESIDENCES-SECTION">
+        <div class="container center">
+            <div class="row center">
+                <div class="D-12 L-12 M-12 overflow">
+                    <a href="javascript:slickCT('.oneslide','slickNext');" class="slide-prev"><img
+                            src="images/new-hotel-logo/new-prev2.png"></a>
+                    <a href="javascript:slickCT('.oneslide','slickPrev');" class="slide-next"><img
+                            src="images/new-hotel-logo/new-next2.png"></a>
+                    <div class="oneslide">
+                        <div class="rwrap">
+                            <div class="inner">
+                                <div class="mask"></div>
+                                <img src="images/new-image/home/lobby-346426_1280.jpg" class="imghover">
+                            </div>
+                        </div>
+                        <div class="rwrap">
+                            <div class="inner">
+                                <div class="mask"></div>
+                                <img src="images/new-image/home/hotel-lobby-362568_1280.jpg" class="imghover">
+                            </div>
+                        </div>
+                        <div class="rwrap">
+                            <div class="inner">
+                                <div class="mask"></div>
+                                <img src="images/new-image/home/hotel-4199113_1280.jpg" class="imghover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="D-10 L-12 M-12">
+                    <div class="room-capt">
+                        <p class="rcpt1">AVAILABLE</p>
+                        <p class="rcpt2"><span class="head-title placeYouCallHome">RESIDENCES</span></p>
+                        <p class="ct">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <br>
+                        <a href="residences.html" target="_blank" class="bdbutton explore-our-residences">EXPLORE OUR
+                            RESIDENCES</a>
+                        <a href="contact.html" target="_blank" class="bdbutton private-viewing">BOOK A PRIVATE
+                            VIEWING</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-back">
+            <div class="row-fluid slide-mock">
+                <div class="D-4 transz cover" data-src="images/new-image/home/lobby-346426_1280.jpg"></div>
+                <div class="D-4 transz cover" data-src="images/new-image/home/hotel-lobby-362568_1280.jpg"></div>
+                <div class="D-4 transz cover" data-src="images/new-image/home/lobby-346426_1280.jpg"></div>
+                <div class="D-4 transz cover" data-src="images/new-image/home/hotel-lobby-362568_1280.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home Section 3 -->
+    <section class="content pdct-nt center UNORDINARY-EXPERIENCES">
+        <div class="inner">
+            <div class="row">
+                <div class="D-10 L-12 M-12 no-gap introbox">
+
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title unOrdinary">HOME</p>
+                        <p class="head-title experiences">EXPERIENCES</p>
+                        <div class="hr">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="row-fluid exrow">
+                        <div class="D-4 M-12 aos unOrdinary-item1" data-aos="fade-up" data-aos-delay="100">
+                            <div class="unOrdinary-item1-1">
+                                <img src="images/new-image/home/11.jpg">
+                            </div>
+                            <div class="unOrdinary-item1-2">
+                                <p class="unOrdinaryHeaderContent left">Services</p>
+                                <p class="unOrdinaryParagraph left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit,
+                                    sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="unOrdinary-item1-3">
+                                <p class="p3-unordinary"><a href="services.html" target="_blank" class="bdbutton">OUR
+                                        SERVICES</a></p>
+                            </div>
+                        </div>
+                        <div class="D-4 M-12 aos unOrdinary-item2" data-aos="fade-up" data-aos-delay="200">
+                            <div class="unOrdinary-item1-1">
+                                <img src="images/new-image/home/living-room-728732_1280.jpg">
+                            </div>
+                            <div class="unOrdinary-item1-2">
+                                <p class="unOrdinaryHeaderContent left">Facilities</p>
+                                <p class="unOrdinaryParagraph left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit,
+                                    sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="unOrdinary-item1-3">
+                                <p class="p3-unordinary"><a href="facilities.html" target="_blank" class="bdbutton">OUR
+                                        FACILITIES</a></p>
+                            </div>
+                        </div>
+                        <div class="D-4 M-12 aos unOrdinary-item3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="unOrdinary-item1-1">
+                                <img src="images/new-image/home/tea-381235_1280.jpg">
+                            </div>
+                            <div class="unOrdinary-item1-2">
+                                <p class="unOrdinaryHeaderContent left">Recreation</p>
+                                <p class="unOrdinaryParagraph left">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit,
+                                    sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="unOrdinary-item1-3">
+                                <p class="p3-unordinary"><a href="lifestyle.html" target="_blank"
+                                        class="bdbutton">DISCOVER
+                                        A WORLD OF
+                                        CONVENIENCE</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Home Section 4 -->
+    <section class="content pdct-top center AMENITIES">
+        <div class="inner">
+            <div class="row">
+                <div class="D-11 M-12  introbox aos" data-aos="fade-up">
+                    <p class="sub-title">HOME</p>
+                    <p class="head-title amenitiesHeader">RESIDENCES</p>
+                    <div class="hr">
+                        <div class="line tt-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Home Section 5 -->
+    <section class="content center amenitiesImage">
+        <div class="container center">
+            <div class="row center">
+                <div class="D-12 L-12 M-12 overflow">
+                    <a href="javascript:slickCT('.amenslide','slickNext');" class="slide-prev"><img
+                            src="images/new-hotel-logo/new-prev2.png"></a>
+                    <a href="javascript:slickCT('.amenslide','slickPrev');" class="slide-next"><img
+                            src="images/new-hotel-logo/new-next2.png"></a>
+                    <div class="amenslide">
+                        <div class="rwrap">
+                            <div class="inner">
+                                <img src="images/new-image/home/living-room-728736_1280.jpg" class="imghover">
+                            </div>
+
+                        </div>
+                        <div class="rwrap">
+                            <div class="inner">
+                                <img src="images/new-image/home/fitness-studio-331567_1280.jpg" class="imghover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="D-12 M-12 L-12 after-slide">
+                    <div class="rwrap">
+                        <div class="row-fluid left amenities">
+                            <div class="D-5 M-12">
+                                <ul>
+                                    <li>Library Room</li>
+                                    <li>Rooftop sun terrace with lounge chairs</li>
+                                    <li>Garden patio</li>
+                                    <li>Rooftop party lounge</li>
+                                </ul>
+                            </div>
+                            <div class="D-4 M-12">
+                                <ul>
+                                    <li>Bicycle storage facilities</li>
+                                    <li>Dry cleaning</li>
+                                    <li>Fitness center</li>
+                                    <li>Parking garage</li>
+                                </ul>
+                            </div>
+                            <div class="D-3 M-12">
+                                <ul>
+                                    <li>24-hour attended lobby</li>
+                                    <li>Smoke-free living</li>
+                                    <li>Pet friendly</li>
+                                    <li>No fee apartments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-back top">
+            <div class="row-fluid slide-mock-amen">
+                <div class="D-4 transz cover" data-src="images/new-image/home/fitness-studio-331567_1280.jpg"></div>
+                <div class="D-4 transz cover" data-src="images/new-image/home/living-room-728736_1280.jpg"></div>
+                <div class="D-4 transz cover" data-src="images/new-image/home/fitness-studio-331567_1280.jpg"></div>
+                <div class="D-4 transz cover" data-src="images/new-image/home/living-room-728736_1280.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Home Section 6 -->
+    <section class="content pdct center NEIGHBOURHOOD">
+        <div class="inner">
+            <div class="row  left">
+                <div class="D-7 L-12 T-12 M-12 margin-bottom-mobile aos" data-aos="fade-up">
+                    <img src="images/new-image/home/22.jpg">
+                </div>
+                <div class="D-5 L-12 T-12 M-12 introbox left aos center-right bangkok-most-luxurious" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="inner content">
+                        <p class="sub-title bangkok-most-luxurious-item1">HOME</p>
+                        <p class="head-title bangkok-most-luxurious-item2">NEIGHBOURHOOD</p>
+                        <p class="bangkok-most-luxurious-item3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Home Section 7 -->
+    <section class="content pdct-nt center TOP-3-PICKS">
+        <div class="inner">
+            <div class="row">
+                <div class="D-10 L-12 M-12 no-gap  introbox">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">HOME</p>
+                        <p class="head-title top3picksHeaderLarge">TOP 3 PICKS</p>
+                        <div class="hr">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid exrow">
+                        <div class="D-4 T-12 M-12 aos" data-aos="fade-up" data-aos-delay="100">
+                            <img src="images/new-image/home/neighborhood-802074_1280.jpg"
+                                class="imgFIT TOP-3-PICKS-img1">
+                            <p class="top3picksHeader left"><img src="images/icon-shopping.png">Village</p>
+                            <p class="top3picksParagraph left">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <br><br>
+                        </div>
+                        <div class="D-4 T-12 M-12 aos" data-aos="fade-up" data-aos-delay="200">
+                            <img src="images/new-image/home/massage-therapy-1612308_1280.jpg"
+                                class="imgFIT TOP-3-PICKS-img2">
+                            <p class="top3picksHeader left"><img src="images/icon-wellness.png">Wellness</p>
+                            <p class="top3picksParagraph left">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <br><br>
+                        </div>
+                        <div class="D-4 T-12 M-12 aos" data-aos="fade-up" data-aos-delay="300">
+                            <img src="images/new-image/home/alcohol-1961542_1280.jpg" class="imgFIT TOP-3-PICKS-img3">
+                            <p class="top3picksHeader left"><img src="images/icon-dining.png">Bar</p>
+                            <p class="top3picksParagraph left">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home Section 8 -->
+    <section class="content center MAGNOLIAS-MAP">
+        <div class="inner">
+            <div class="row">
+                <div class="D-10 L-12 M-12  introbox">
+                    <div class="auto-wrap">
+                        <img src="images/new-image/home/map2.png">
+                        <div class="row-fluid mapwrap">
+                            <div class="D-4 M-12 left mapcol">
+
+                                <div class=" maprow education aos" data-aos="fade-right" data-aos-delay="0"
+                                    id="list-ed">
+                                    <a href="javascript:toggleDefault('#list-ed','listActive');"></a>
+                                    <p class="head-title educationHeader mapwrap-header1">Institutes</p>
+                                    <ol>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                    </ol>
+                                </div>
+
+                                <div class=" maprow hospital aos" data-aos="fade-right" data-aos-delay="100"
+                                    id="list-ho">
+                                    <a href="javascript:toggleDefault('#list-ho','listActive');"></a>
+                                    <p class="head-title mapwrap-header2">Hospital</p>
+                                    <ol>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                    </ol>
+                                </div>
+
+                                <div class=" maprow business aos" data-aos="fade-right" data-aos-delay="200"
+                                    id="list-bu">
+                                    <a href="javascript:toggleDefault('#list-bu','listActive');"></a>
+                                    <p class="head-title mapwrap-header3">Embassies</p>
+                                    <ol>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                            <div class="D-4 M-12 left mapcol">
+
+                                <div class=" maprow shopping aos" data-aos="fade-right" data-aos-delay="0" id="list-sh">
+                                    <a href="javascript:toggleDefault('#list-sh','listActive');"></a>
+                                    <p class="head-title mapwrap-header4">Office Buildings</p>
+                                    <ol>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                    </ol>
+                                </div>
+
+                                <div class=" maprow office aos" data-aos="fade-right" data-aos-delay="100" id="list-of">
+                                    <a href="javascript:toggleDefault('#list-of','listActive');"></a>
+                                    <p class="head-title mapwrap-header5">Attractions</p>
+                                    <ol>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                            <div class="D-4 M-12 left mapcol">
+
+                                <div class=" maprow hotel aos" data-aos="fade-right" data-aos-delay="0" id="list-ht">
+                                    <a href="javascript:toggleDefault('#list-ht','listActive');"></a>
+                                    <p class="head-title mapwrap-header6">Shopping</p>
+                                    <ol>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                        <li>Lorem Ipsum</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home Section 9 -->
+    <section class="content center THROUGH-THE-LENS">
+        <div class="inner">
+            <div class="row">
+                <div class="D-10 L-12 M-12  introbox">
+                    <div class="aos" data-aos="fade-up">
+                        <p class="sub-title">HOME</p>
+                        <p class="head-title igtitle">THROUGH THE LENS</p>
+                        <div class="hr">
+                            <div class="line tt-center"></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid instagram exrow">
+                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                            <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
+                            <a href="images/new-image/home/ig1.jpg" target="_blank"><img
+                                    src="images/new-image/home/ig1.jpg"></a>
+                        </div>
+                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                            <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
+                            <a href="images/new-image/home/ig2.jpg" target="_blank"><img
+                                    src="images/new-image/home/ig2.jpg"></a>
+                        </div>
+                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                            <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
+                            <a href="images/new-image/home/ig3.jpg" target="_blank"><img
+                                    src="images/new-image/home/ig3.jpg"></a>
+                        </div>
+                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                            <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
+                            <a href="images/new-image/home/ig4.jpg" target="_blank"><img
+                                    src="images/new-image/home/ig4.jpg"></a>
+                        </div>
+                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                            <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
+                            <a href="images/new-image/home/ig5.jpg" target="_blank"><img
+                                    src="images/new-image/home/ig5.jpg"></a>
+                        </div>
+                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                            <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
+                            <a href="images/new-image/home/ig6.jpg" target="_blank"><img
+                                    src="images/new-image/home/ig6.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="inner">
+            <div class="row">
+                <div class="D-4 L-5 T-5 D-left-4 M-12 M-left-0 center footer-form aos" data-aos="fade-up">
+                    <p class="head-title footer-header">NOW AVAILABLE</p>
+                    <form name="available">
+                        <div class="form-wrap bd left">
+                            <label>Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="form-wrap bd left">
+                            <label>Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <p class="inOrderForUs">IN ORDER FOR US TO TAILOR OUR OFFER SPECIFICALLY
+                            TO YOUR NEEDS, PLEASE LET US KNOW WHICH LEVEL
+                            YOU ARE INTERESTED IN OR HOW MANY ROOMS
+                            YOU WILL NEED.</p>
+
+                        <div class="form-wrap bd mb left">
+                            <label class="det">Detail</label>
+                            <textarea type="text" name="detail" id="detail" rows="8"></textarea>
+                        </div>
+
+
+                        <div class="form-wrap left accept">
+                            <label class="container">
+                                <span class="iAgree">I Agree with the General Terms & Conditions
+                                    <br>
+                                    of the protection of
+                                    the privacy declaration.</span>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <a href="javascript:;" class="submit bdbutton submitFooter">SUBMIT</a>
+
+                    </form>
+                </div>
+
+                <div class="D-4 L-2 T-3 D-right-4 M-12 M-right-0 left footer-item1">
+                    <img src="images/new-image/home/logo-footer-new.png" class="logo-footer aos" data-aos="fade-up">
+                    <ul class="footmenu aos" data-aos="fade-up" data-aos-delay="100">
+                        <li><a href="javascript:;">HOME</a></li>
+                        <li><a href="javascript:;">ROOMS & SUITES</a></li>
+                        <li><a href="javascript:;">FEATURES</a></li>
+                        <li><a href="javascript:;">AMENITIES</a></li>
+                        <li><a href="javascript:;">NEIGHBOURHOOD</a></li>
+                        <li><a href="javascript:;">CONTACT</a></li>
+                    </ul>
+                    <div class="aos" data-aos="fade-up" data-aos-delay="200">
+                        <p class="foot-head">ENQUIRIES</p>
+                        <p class="foot-tel"><a href="javascript:;">(+66) 011 111 111</a><br><a
+                                href="mailto:info@hotel.com">info@hotel.com</a></p>
+                        <a href="javascript:;" class="social-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="javascript:;" class="social-link"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/Compass-footer3.png" class="compasslogo aos" data-aos="fade-up">
+                <!-- <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">&copy; <?php echo date('Y'); ?>
+                    Magnolias Rachdamri | <a href="javascript:;" class="terms-of-use">Terms of Use</a></div> -->
+
+                <div class="copyright aos" data-aos="fade-up" data-aos-delay="300">Copyright © 2020 Hotel.
+                    <span class="all-rights-reserved">All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="plugins/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="plugins/jquery.selectric.min.js"></script>
+    <script src="plugins/mcb/jquery.mCustomScrollbar.js"></script>
+    <script src="plugins/jquery.appear.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="scripts/setting.js"></script>
+
+</body>
+
+</html>
