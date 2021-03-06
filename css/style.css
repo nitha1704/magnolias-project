@@ -1131,6 +1131,7 @@ a:focus {
 .residence-grid-images-row1 img,
 .residence-grid-images-row2 img {
   margin-bottom: 30px;
+  height: 400px;
 }
 
 .residence-grid-images-row1-item1 {

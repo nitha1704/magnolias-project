@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="plugins/bootstrap3/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/fancybox3.5.6/jquery.fancybox.min.css">
     <link rel="stylesheet" href="plugins/selectric.css">
     <link rel="stylesheet" href="plugins/mcb/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/grid-system12.css">
@@ -627,35 +628,41 @@
                         </div>
                     </div>
                     <div class="row-fluid instagram exrow">
-                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                        <div class="D-4 M-6 SM-12 ins-img aos" data-aos="fade">
                             <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
-                            <a href="images/new-image/home/ig1.jpg" target="_blank"><img
-                                    src="images/new-image/home/ig1.jpg"></a>
+                            <a href="images/new-image/home/ig1.jpg" target="_blank"
+                                data-fancybox="gallery-home-section9"><img src="images/new-image/home/ig1.jpg">
+                            </a>
                         </div>
-                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                        <div class="D-4 M-6 SM-12 ins-img aos" data-aos="fade">
                             <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
-                            <a href="images/new-image/home/ig2.jpg" target="_blank"><img
-                                    src="images/new-image/home/ig2.jpg"></a>
+                            <a href="images/new-image/home/ig2.jpg" target="_blank"
+                                data-fancybox="gallery-home-section9"><img src="images/new-image/home/ig2.jpg">
+                            </a>
                         </div>
-                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                        <div class="D-4 M-6 SM-12 ins-img aos" data-aos="fade">
                             <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
-                            <a href="images/new-image/home/ig3.jpg" target="_blank"><img
-                                    src="images/new-image/home/ig3.jpg"></a>
+                            <a href="images/new-image/home/ig3.jpg" target="_blank"
+                                data-fancybox="gallery-home-section9"><img src="images/new-image/home/ig3.jpg">
+                            </a>
                         </div>
-                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                        <div class="D-4 M-6 SM-12 ins-img aos" data-aos="fade">
                             <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
-                            <a href="images/new-image/home/ig4.jpg" target="_blank"><img
-                                    src="images/new-image/home/ig4.jpg"></a>
+                            <a href="images/new-image/home/ig4.jpg" target="_blank"
+                                data-fancybox="gallery-home-section9"><img src="images/new-image/home/ig4.jpg">
+                            </a>
                         </div>
-                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                        <div class="D-4 M-6 SM-12 ins-img aos" data-aos="fade">
                             <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
-                            <a href="images/new-image/home/ig5.jpg" target="_blank"><img
-                                    src="images/new-image/home/ig5.jpg"></a>
+                            <a href="images/new-image/home/ig5.jpg" target="_blank"
+                                data-fancybox="gallery-home-section9"><img src="images/new-image/home/ig5.jpg">
+                            </a>
                         </div>
-                        <div class="D-4 M-6 ins-img aos" data-aos="fade">
+                        <div class="D-4 M-6 SM-12 ins-img aos" data-aos="fade">
                             <!-- <div class="like"><img src="images/inst-like.svg"></div> -->
-                            <a href="images/new-image/home/ig6.jpg" target="_blank"><img
-                                    src="images/new-image/home/ig6.jpg"></a>
+                            <a href="images/new-image/home/ig6.jpg" target="_blank"
+                                data-fancybox="gallery-home-section9"><img src="images/new-image/home/ig6.jpg">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -744,11 +751,22 @@
 
     <script src="plugins/parallax.js-1.5.0/parallax.min.js"></script>
     <script src="plugins/jquery.selectric.min.js"></script>
+    <script src="plugins/fancybox3.5.6/jquery.fancybox.min.js"></script>
     <script src="plugins/mcb/jquery.mCustomScrollbar.js"></script>
     <script src="plugins/jquery.appear.js"></script>
     <script src="plugins/aos/aos.js"></script>
     <script src="plugins/slick/slick.min.js"></script>
     <script src="scripts/setting.js"></script>
+
+
+    <script>
+        // FancyBox
+        $('[data-fancybox="gallery-home-section9"]').fancybox({
+            // Options will go here
+            animationEffect: "zoom-in-out",
+            transitionEffect: "slide",
+        });
+    </script>
 
 </body>
 
